@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input {
+    font-family: 'Open Sans';
+}
+
+.wallet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cabecera {
+    display: flex;
+    margin-bottom: 5px;
+    height: 40px;
+    width: 225px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecera>i {
+    font-size: 25px;
+}
+
+.cabecera>h1 {
+    margin-left: 20px;
+    font-size: 22px;
+    font-family: 'Breymont';
+}
+
+.superior {
+    display: flex;
+}
+
+.ingreso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #9789ef;
+    margin-right: 5px;
+}
+
+.ingreso>input {
+    margin-left: 10px;
+    text-align: right;
+    width: 110px;
+    border-radius: 5px;
+}
+
+.btn_ingreso {
+    margin-left: 10px;
+    font-size: 18px;
+    color: rgb(4, 43, 4);
+}
+
+.btn_ingreso:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.totales {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #6c8e75;
+}
+
+.totales>div {
+    margin: 33px 60px 0 60px;
+}
+
+.r_ing,
+.r_gas,
+.r_tot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nro_dis {
+    font-size: 30px;
+}
+
+.gastos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    height: 200px;
+    width: 805px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+}
+
+.ingreso_gastos {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px 0 50px;
+}
+
+.js_gastos {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px 0 50px;
+}
+
+.detGastos {
+    width: 400px;
+    border-radius: 5px;
+}
+
+.impGastos {
+    text-align: right;
+    width: 110px;
+    border-radius: 5px;
+}
+
+.btn_gastos {
+    margin-left: 10px;
+    font-size: 18px;
+    color: rgb(4, 43, 4);
+}
+
+.btn_gastos:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.itemGastos {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(28, 44, 44);
+}
+
+.itemGastos>p>i {
+    color: black;
+}
+
+.itemGastos>p>i:hover {
+    color: red;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Breymont';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Breymont-Bold.ttf");
+}
+
+@media only screen and (max-width: 850px) {
+    .superior {
+        display: flex;
+        flex-direction: column;
+    }
+    .totales {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 300px;
+        border-radius: 10px;
+        background-color: #6c8e75;
+        margin-top: 5px;
+    }
+    .totales>div {
+        margin: 33px 20px 0 20px;
+    }
+    .gastos {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        height: 400px;
+        width: 300px;
+        border-radius: 10px;
+        background-color: #e7e7e7;
+    }
+    .ingreso_gastos {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 10px 0 10px;
+    }
+    .detGastos {
+        width: 190px;
+        border-radius: 5px;
+    }
+    .impGastos {
+        text-align: right;
+        width: 55px;
+        border-radius: 5px;
+    }
+    label[for="LblGastos"] {
+        display: none;
+    }
+}
