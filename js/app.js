@@ -58,3 +58,20 @@ const BorrarGastos = indiceArreglo => {
         }
     }
 }
+
+const CambiarModo = tipoDia => {
+    if (tipoDia == 'dia') {
+        document.getElementById("dia").style.display = "none";
+        document.getElementById("noche").style.display = "block";
+        document.getElementById("cuerpo").style.backgroundColor = "white";
+        document.getElementById("ingreso").style.backgroundColor = "#b8b4cf";
+        document.getElementById("totales").style.backgroundColor = "#95e4aa";
+    } else {
+        document.getElementById("noche").style.display = "none";
+        document.getElementById("dia").style.display = "block";
+        document.getElementById("cuerpo").style.backgroundColor = "black";
+        document.getElementById("ingreso").style.backgroundColor = "#9789ef";
+        document.getElementById("totales").style.backgroundColor = "#6c8e75";
+
+    }
+}

@@ -10,19 +10,27 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="cuerpo">
+    <div class="btn-modo">
+        <div class="btn-sun">
+            <i class="bi bi-sun icono_modo" id="dia" onclick="CambiarModo('dia')"></i>
+        </div>
+        <div class="btn-moon">
+            <i class="bi bi-moon-fill icono_modo" id="noche" onclick="CambiarModo('noche')"></i>
+        </div>
+    </div>
     <div class="wallet">
         <div class="cabecera">
             <i class="bi bi-wallet2"></i>
             <h1>UTn WALlET</h1>
         </div>
         <div class="superior">
-            <div class="ingreso">
+            <div class="ingreso" id="ingreso">
                 <label for="importe">Importe</label>
                 <input type="text" id="importe-input" name="importe" placeholder=" Ingresar importe" />
                 <i class="bi bi-plus-circle btn_ingreso" onclick="ObtenerIngreso()"></i>
             </div>
-            <div class="totales">
+            <div class="totales" id="totales">
                 <div class="r_ing">
                     <label for="ingresado">Dinero Ingresado:</label>
                     <label class="nro_ing" id="nro_ing">$0.00</label>
